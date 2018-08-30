@@ -12,5 +12,8 @@ public class RollingDice {
         System.out.println(die1); // Java calls toString method from class Die
         System.out.println(die2); // Java calls toString method from class Die
 
+        String s = "hello";
+        s = s.replace("h", "$");
+        System.out.println(s);
     }
 }
