@@ -1,18 +1,16 @@
 package conditionals;
 
-//********************************************************************
-//  MinOfThree.java       Author: Lewis/Loftus
-//
-//  Demonstrates the use of nested if statements.
-//********************************************************************
-
+/** Class MinOfThree.java
+ *  Author: Lewis/Loftus
+ *  Demonstrates the use of nested if statements.
+ */
 import java.util.Scanner;
 
 public class MinOfThree {
-    //-----------------------------------------------------------------
-    //  Reads three integers from the user and determines the smallest
-    //  value.
-    //-----------------------------------------------------------------
+
+    /** Reads three integers from the user and determines the smallest value.
+     * @param args command line arguments - not used in this program
+     */
     public static void main(String[] args) {
         int num1, num2, num3, min = 0;
 
@@ -28,10 +26,11 @@ public class MinOfThree {
                 min = num1;
             else
                 min = num3;
-        else if (num2 < num3)
-            min = num2;
-        else
-            min = num3;
+        else // If we got here, it means num1 >= num2
+            if (num2 < num3)
+                min = num2;
+            else
+                min = num3;
 
         System.out.println("Minimum value: " + min);
     }

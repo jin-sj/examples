@@ -12,5 +12,6 @@ public class ArrayListExample {
         System.out.println(myStrings.get(0)); // access the first string
         System.out.println(myStrings.get(1)); // access the second string
 
+
     }
 }
