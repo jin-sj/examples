@@ -1,6 +1,7 @@
 package conditionals;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /** Class CircleComparison demonstrates that one can not use == to compare objects
  * for equality.
@@ -15,7 +16,7 @@ public class CircleComparison {
 
         System.out.println(c1.equals(c2)); // true!
 
-        ArrayList<Circle> arr = new ArrayList();
+        List<Circle> arr = new ArrayList();
         arr.add(c1);
         boolean c = arr.contains(new Circle(1.0f)); // true
         // c would be false if we did not override the equals method
