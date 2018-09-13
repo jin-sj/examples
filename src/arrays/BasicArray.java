@@ -23,8 +23,9 @@ public class BasicArray
         // list[5] = 999;  // change one array value
 
         //  Print the array values
-        for (int value : list)
+        for (int value : list) {
             System.out.print(value + "  ");
+        }
 
         System.out.println();
 
